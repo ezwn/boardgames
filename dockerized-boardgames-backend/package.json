@@ -1,0 +1,14 @@
+{
+  "name": "dockerized-boardgames-backend",
+  "version": "0.6.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "image:build": "docker image build -t boardgames-backend:0.6 .",
+    "image:run": "docker container run --publish 8080:8180 --name bgback boardgames-backend:0.6",
+    "image:stop": "docker stop bgback"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
